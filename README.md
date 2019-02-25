@@ -21,8 +21,7 @@ track our files in, we need to _intialize_ the directory as a Git repository.
 That means Git will then pay attention to what goes on in the directory and give
 us all the Git superpowers.
 
-To get started, we'll create a new directory. Go to the terminal and type the
-following:
+To get started, we'll create a new directory. Go to the terminal (accessed through the 'Sandbox' or Learn IDE) and type the following:
 
 **REMEMBER** Don't type the `$`. That's the universal symbol for a command prompt.
 It's how technical documentation says "Here's a thing for the shell to interpret."
