@@ -21,7 +21,8 @@ track our files in, we need to _intialize_ the directory as a Git repository.
 That means Git will then pay attention to what goes on in the directory and give
 us all the Git superpowers.
 
-To get started, we'll create a new directory. Go to the terminal (accessed through the 'Sandbox' or Learn IDE) and type the following:
+To get started, we'll create a new directory. Go to the terminal (accessed
+through the 'Sandbox' or Learn IDE) and type the following:
 
 **REMEMBER** Don't type the `$`. That's the universal symbol for a command prompt.
 It's how technical documentation says "Here's a thing for the shell to interpret."
@@ -47,10 +48,8 @@ my-git-project $ git init
 Initialized empty Git repository in /Users/avi/my-git-project/.git/
 ```
 
-After entering `git init`, the output in our terminal reads `Initialized empty
-Git repository in /our/path/here/my-git-project/.git/`. Git is letting us know
-that it created a new repository within the hidden `.git` folder in `my-git-
-project`. This hidden directory, `.git`, is what Git uses to keep track of our
+After entering `git init`, the output in our terminal reads `Initialized empty Git repository in /our/path/here/my-git-project/.git/`. Git is letting us know
+that it created a new repository within the hidden `.git` folder in `my-git- project`. This hidden directory, `.git`, is what Git uses to keep track of our
 log of changes. So, don't go in there and start randomly deleting things!
 
 > Be careful about making an entire directory, like our home directory or our
@@ -138,13 +137,13 @@ there is a new file, we still haven't told Git that this new file is considered
 a change to our repository. We create changes in our repository by making
 _commits_.
 
-**Tip: The standard way to capture all changes in a directory is to type `git add .`, where the `.` refers to the entire current directory.**
+**Tip: The standard way to capture all changes in a directory is to type
+`git add .`, where the `.` refers to the entire current directory.**
 
 ## Create a Commit and Apply a Commit Message with `git commit`
 
 Git knows that the state of `README.md` is "to be recorded as part of this
-commit" because our last use of `git status` listed `README.md` under `Changes
-to be committed:`. That's why a _commit_ is composed of two steps: adding the
+commit" because our last use of `git status` listed `README.md` under `Changes to be committed:`. That's why a _commit_ is composed of two steps: adding the
 files in the snapshot (_commit_) and then doing the commit with your message.
 
 To make our first commit, type: `git commit -m "Initial commit"`. This tells
@@ -168,12 +167,13 @@ my-git-project $ git status
 On branch master
 nothing to commit, working directory clean
 ```
-If we make another change, for example, to README.md, we can add another commit 
+
+If we make another change, for example, to README.md, we can add another commit
 with this new set of changes with `git commit -am`:
 
 ```
-my-git-project $ git commit -am "Updated README.md"
-[master (root-commit) e55477d] Updated README.md
+my-git-project $ git commit -am "Updates README.md"
+[master (root-commit) e55477d] Updates README.md
  1 file changed, 4 insertions(+), 0 deletions(2)
 ```
 
@@ -191,7 +191,7 @@ more advanced features later.
 ## Conclusion
 
 To make a new Git repository out of a directory—which we'll only have to do once
-per project—use `git init`.  Whenever you make a change to a file or create a
+per project—use `git init`. Whenever you make a change to a file or create a
 new file, you can check the status of these changes with `git status`. When
 you're ready to keep track of changes, you can add them individually with the
 `git add <filename or path>` command, or collectively with the `git add .`
