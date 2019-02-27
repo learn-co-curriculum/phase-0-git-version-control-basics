@@ -66,7 +66,7 @@ directory. The command we use for this is `git status`.
 my-git-project $ git status
 ```
 
-Since we have added any files yet, we'll see:
+Since we have not added any files yet, we'll see:
 
 ```
 On branch master
