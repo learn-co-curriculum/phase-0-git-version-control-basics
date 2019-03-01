@@ -179,14 +179,12 @@ The `-a` flag refers to adding 'all changes' on all tracked files and `-m`
 specifies a commit message of `"Updates README.md"`. To review some of your
 Unix CLI skills, this could also be written as: `git commit -a -m "Updates README.md"`
 
-Good work!
+Good work! Commits are amazingly powerful in Git. They are the heart of many of Git's advanced
+features. Understanding the basic workflow of Git initialization and setup
+is the foundation for success.
 
 
 ## Conclusion
-
-Commits are amazingly powerful in Git. They are the heart of many of Git's advanced
-features. Understanding the basic workflow of Git initialization and setup
-is the foundation for success.
 
 To make a new Git repository out of a directory &mdash; which we'll only have to do once
 per project &mdash; use `git init`. Whenever you make a change to a file or create a
