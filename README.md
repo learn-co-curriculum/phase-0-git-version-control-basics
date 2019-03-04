@@ -24,7 +24,7 @@ us all the Git superpowers.
 To get started, we'll create a new directory. Go to the terminal and type the following:
 
 **REMEMBER** Don't type the `$`. That's the universal symbol for a command prompt.
-It's how technical documentation says "Here's a thing for the shell to interpret."
+It's how technical documentation says "Here's a thing for the shell to process."
 
 ```
 ~ $ mkdir my-git-project
