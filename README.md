@@ -50,7 +50,9 @@ Initialized empty Git repository in /Users/avi/my-git-project/.git/
 Git lets us know that it has put `/Users/avi/my-git-project` under its protection.
 Git also tells us that it stores its own data in the `.git` directory. This hidden
 directory, `.git`, is what Git uses to keep important stuff, like the commit
-history. Don't go in there and start randomly deleting things!
+history. Don't go in there and start randomly deleting things! That said, if ever
+you do `git init` in the wrong directory, you can `rm -rf .git` and return the
+directory to a plain-old, unprotected directory.
 
 > Be careful about making an entire directory, like our home directory or our
 > desktop, into a Git repository accidentally. Make sure you only type `git init`
