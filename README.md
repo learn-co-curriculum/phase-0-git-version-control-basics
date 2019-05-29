@@ -17,7 +17,7 @@ make Git work for us.
 ## Identify How to Initialize a Git Repository with `git init`
 
 Git operates on a directory level. When we have a new directory that we want to
-track our files in, we need to _intialize_ the directory as a Git repository.
+track our files in, we need to _initialize_ the directory as a Git repository.
 That means Git will then pay attention to what goes on in the directory and give
 us all the Git superpowers.
 
@@ -161,7 +161,7 @@ my-git-project $ git commit -m "Initial commit"
 
 We can see that Git has created a new version of our repo, represented by the
 _SHA_ `e55477d`. SHAs are the identification system that `git` uses to keep track
-of versions; they're long complex numberes and letters that are unlikely to be
+of versions; they're long complex numbers and letters that are unlikely to be
 duplicated.
 
 The `commit` command committed 1 file.
