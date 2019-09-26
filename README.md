@@ -179,7 +179,7 @@ If we make another change, for example, to README.md, we can add another commit
 with this new set of changes with 
 
 ```
-git commit -am "A message"`
+git commit -am "A message"
 ```
 
 The `-a` flag refers to adding 'all changes' on all tracked files and `-m`
