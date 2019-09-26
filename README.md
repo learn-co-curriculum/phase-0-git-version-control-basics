@@ -30,7 +30,7 @@ It's how technical documentation says "Here's a thing for the shell to process."
 ~ $ mkdir my-git-project
 ```
 
-This command creates new directory. Then:
+This command creates new a directory. Then:
 
 ```
 ~ $ cd my-git-project
@@ -49,7 +49,7 @@ Initialized empty Git repository in /Users/avi/my-git-project/.git/
 
 Git lets us know that it has put `/Users/avi/my-git-project` under its protection.
 Git also tells us that it stores its own data in the `.git` directory. This hidden
-directory, `.git`, is what Git uses to keep important stuff, like the commit
+directory, `.git`, is where Git keeps important stuff, like the commit
 history. Don't go in there and start randomly deleting things! That said, if ever
 you do `git init` in the wrong directory, you can `rm -rf .git` and return the
 directory to a plain-old, unprotected directory.
@@ -60,7 +60,7 @@ directory to a plain-old, unprotected directory.
 
 ## Check the Status of a Repository with `git status`
 
-Now we have Git watching this directory, let's see what it can tell us about the
+Now that we have Git watching this directory, let's see what it can tell us about the
 directory. The command we use for this is `git status`.
 
 ```
@@ -179,7 +179,7 @@ If we make another change, for example, to README.md, we can add another commit
 with this new set of changes with 
 
 ```
-git commit -am "A Message"`
+git commit -am "A message"`
 ```
 
 The `-a` flag refers to adding 'all changes' on all tracked files and `-m`
@@ -208,8 +208,8 @@ you're ready to preserve changes, you can `git add` the files (or directories of
 `git add <filename or path>` command.
 
 Once your changes have been added, or "staged," use `git commit -m` to commit them
-with a explanatory message. You can shorten the `add` + `commit` process, provided
-that all the files are being tracked by using `git commit -am "A Message"`.
+with an explanatory message. You can shorten the `add` + `commit` process, provided
+that all the files are being tracked by using `git commit -am "A message"`.
 
 If we've followed all these steps, our `my-git-project` directory is now a `git`
 repository. We can retain the directory as a sandbox for Git experimentation.
