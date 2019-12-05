@@ -201,7 +201,7 @@ is the foundation for success.
 To make a new Git repository out of a directory &mdash; which we'll only have to do once
 per project &mdash; use `git init`. Whenever you make a change to a file or create a
 new file, you can check the status of these changes with `git status`. When
-you're ready to preserve changes, you can `git add` the files (or directories of files) with the
+you're ready to preserve changes, you can add the files (or directories of files) with the
 `git add <filename or path>` command.
 
 Once your changes have been added, or "staged," use `git commit -m` to commit them
