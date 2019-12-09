@@ -54,7 +54,8 @@ you do `git init` in the wrong directory, you can `rm -rf .git` and return the
 directory to a plain-old, unprotected directory.
 
 > Be careful about making an entire directory, like our home directory or our
-> desktop, into a Git repository accidentally. Make sure you only type `git init` > _within_ the directory you want `git` to track.
+> desktop, into a Git repository accidentally. Make sure you only type `git init`
+> _within_ the directory you want `git` to track.
 
 ## Check the Status of a Repository with `git status`
 
