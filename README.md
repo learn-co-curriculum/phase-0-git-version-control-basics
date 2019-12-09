@@ -23,8 +23,7 @@ us all the Git superpowers.
 
 To get started, we'll create a new directory. Go to the terminal and type the following:
 
-**REMEMBER** Don't type the `$`. That's the universal symbol for a command prompt.
-It's how technical documentation says "Here's a thing for the shell to process."
+> **REMEMBER**: Don't type the `$`. That's the universal symbol for a command prompt. It's how technical documentation says "Here's a thing for the shell to process."
 
 ```
 ~ $ mkdir my-git-project
@@ -55,8 +54,7 @@ you do `git init` in the wrong directory, you can `rm -rf .git` and return the
 directory to a plain-old, unprotected directory.
 
 > Be careful about making an entire directory, like our home directory or our
-> desktop, into a Git repository accidentally. Make sure you only type `git init`
-> _within_ the directory you want `git` to track.
+> desktop, into a Git repository accidentally. Make sure you only type `git init` > _within_ the directory you want `git` to track.
 
 ## Check the Status of a Repository with `git status`
 
@@ -111,7 +109,7 @@ Git's not doing anything with the file and the file is not doing anything with
 Git..._yet_. Let's change that!
 
 > **IMPORTANT**: Whenever we want to check the status of our Git repository &mdash; which we do
-often &mdash; type `git status`.
+> often &mdash; type `git status`.
 
 ## Keep Track of File Changes with `git add`
 
@@ -176,7 +174,7 @@ nothing to commit, working directory clean
 ```
 
 If we make another change, for example, to README.md, we can add another commit
-with this new set of changes with 
+with this new set of changes with
 
 ```
 git commit -am "A message"
@@ -198,13 +196,12 @@ Good work! Commits are amazingly powerful in Git. They are the heart of many of 
 features. Understanding the basic workflow of Git initialization and setup
 is the foundation for success.
 
-
 ## Conclusion
 
 To make a new Git repository out of a directory &mdash; which we'll only have to do once
 per project &mdash; use `git init`. Whenever you make a change to a file or create a
 new file, you can check the status of these changes with `git status`. When
-you're ready to preserve changes, you can `git add` the files (or directories of files) with the
+you're ready to preserve changes, you can add the files (or directories of files) with the
 `git add <filename or path>` command.
 
 Once your changes have been added, or "staged," use `git commit -m` to commit them
@@ -217,5 +214,3 @@ repository. We can retain the directory as a sandbox for Git experimentation.
 ## Resources
 
 - [Git Basics at git-scm.com](https://git-scm.com/book/en/v1/Git-Basics)
-
-
