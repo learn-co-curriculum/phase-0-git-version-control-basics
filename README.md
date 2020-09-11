@@ -21,7 +21,13 @@ track our files in, we need to _initialize_ the directory as a Git repository.
 That means Git will then pay attention to what goes on in the directory and give
 us all the Git superpowers.
 
-To get started, we'll create a new directory. Go to the terminal and type the following:
+To get started, we'll create a new directory. On this lesson's Learn page, you 
+should see a 'Sandbox' button at the top of the page that will open Learn's 
+in-browser IDE. The terminal is the at the bottom of the IDE 
+([check this page out for more information][help]). In the terminal type the 
+following:
+
+[help]: https://help.learn.co/en/articles/1862105-ide-in-browser-sandbox
 
 > **REMEMBER**: Don't type the `$`. That's the universal symbol for a command prompt. It's how technical documentation says "Here's a thing for the shell to process."
 
@@ -215,3 +221,5 @@ repository. We can retain the directory as a sandbox for Git experimentation.
 ## Resources
 
 - [Git Basics at git-scm.com](https://git-scm.com/book/en/v1/Git-Basics)
+
+
