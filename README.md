@@ -82,6 +82,13 @@ No commits yet
 nothing to commit (create/copy files and use "git add" to track)
 ```
 
+> **Note:** Newer repositories may state `On branch main`.  Branching is beyond the scope of
+> this lesson, but to briefly explain - `main` and `master` both refer to the same thing - the
+> core (_**main**, get it?_) branch of a repository. A single repository can have many branches, but always
+> has only _one_ core branch. In the past, this branch defaulted to the name `master`. Going forward,
+> the branch will be named `main`. You'll likely see both as you work with repositories new and
+> old.
+
 Let's create a `README.md` that describes the project. Make our new file by
 typing `touch README.md` from within the `my-git-project` directory. We won't
 see any output after `touch`, but we will see a new file has been created if we
