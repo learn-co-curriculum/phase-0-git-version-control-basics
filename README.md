@@ -21,10 +21,7 @@ track our files in, we need to _initialize_ the directory as a Git repository.
 That means Git will then pay attention to what goes on in the directory and give
 us all the Git superpowers.
 
-To get started, we'll create a new directory. On this lesson's Learn page, you 
-should see a 'Sandbox' button at the top of the page that will open Learn's 
-in-browser IDE. The terminal is the at the bottom of the IDE 
-([check this page out for more information][help]). In the terminal type the 
+To get started, we'll create a new directory. In your terminal, type the 
 following:
 
 [help]: https://help.learn.co/en/articles/1862105-ide-in-browser-sandbox
@@ -222,8 +219,8 @@ Once your changes have been added, or "staged," use `git commit -m` to commit th
 with an explanatory message. You can shorten the `add` + `commit` process, provided
 that all the files are being tracked by using `git commit -am "A message"`.
 
-If we've followed all these steps, our `my-git-project` directory is now a `git`
-repository. We can retain the directory as a sandbox for Git experimentation.
+If we've followed all these steps, our `my-git-project` directory is now a local `git`
+repository.
 
 ## Resources
 
