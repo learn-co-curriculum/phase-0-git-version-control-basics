@@ -122,8 +122,8 @@ Git confirms that it's aware of the file `README.md`, but it's not "tracking" it
 Git's not doing anything with the file and the file is not doing anything with
 Git..._yet_. Let's change that!
 
-> **IMPORTANT**: Whenever we want to check the status of our Git repository &mdash; which we do
-> often &mdash; type `git status`.
+> **IMPORTANT**: Whenever we want to check the status of our Git repository — which we do
+> often — type `git status`.
 
 ## Keep Track of File Changes with `git add`
 
@@ -218,8 +218,8 @@ and setup is the foundation for success.
 
 ## Conclusion
 
-To make a new Git repository out of a directory &mdash; which we'll only have to
-do once per project &mdash; use `git init`. Whenever you make a change to a file
+To make a new Git repository out of a directory — which we'll only have to
+do once per project — use `git init`. Whenever you make a change to a file
 or create a new file, you can check the status of these changes with
 `git status`. When you're ready to preserve changes, you can add the files (or
 directories of files) with the `git add <filename or path>` command.
