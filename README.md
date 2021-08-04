@@ -31,13 +31,13 @@ following:
 > process."
 
 ```sh
-~ $ mkdir my-git-project
+$ mkdir my-git-project
 ```
 
 This command creates new a directory. Then:
 
 ```sh
-~ $ cd my-git-project
+$ cd my-git-project
 ```
 
 This command moves into the newly created directory.
@@ -47,7 +47,7 @@ removing, and editing files), let's set up this directory by _initializing_ it.
 In the terminal type `git init`. It should look like this:
 
 ```sh
-my-git-project $ git init
+$ git init
 Initialized empty Git repository in /Users/avi/my-git-project/.git/
 ```
 
@@ -58,9 +58,9 @@ history. Don't go in there and start randomly deleting things! That said, if eve
 you do `git init` in the wrong directory, you can `rm -rf .git` and return the
 directory to a plain-old, unprotected directory.
 
-> Be careful about making an entire directory, like our home directory or our
-> desktop, into a Git repository accidentally. Make sure you only type
-> `git init` _within_ the directory you want `git` to track.
+Be careful about making an entire directory, like our home directory or our
+desktop, into a Git repository accidentally. Make sure you only type `git init`
+_within_ the directory you want `git` to track.
 
 ## Check the Status of a Repository with `git status`
 
@@ -68,12 +68,12 @@ Now that we have Git watching this directory, let's see what it can tell us abou
 directory. The command we use for this is `git status`.
 
 ```sh
-my-git-project $ git status
+$ git status
 ```
 
 Since we have not added any files yet, we'll see:
 
-```sh
+```txt
 On branch main
 
 No commits yet
@@ -95,8 +95,8 @@ see any output after `touch`, but we will see a new file has been created if we
 type `ls` (which gives a list of all the files in the directory).
 
 ```sh
-my-git-project $ touch README.md
-my-git-project $ ls
+$ touch README.md
+$ ls
 README.md
 ```
 
@@ -105,7 +105,7 @@ Type `git status`. Git will show us what our current repository looks like and
 what changes it sees.
 
 ```sh
-my-git-project $ git status
+$ git status
 On branch master
 
 No commits yet
@@ -118,24 +118,24 @@ Untracked files:
 nothing added to commit but untracked files present (use `git add` to track)
 ```
 
-Git confirms that it's aware of the file `README.md`, but it's not "tracking" it.
-Git's not doing anything with the file and the file is not doing anything with
-Git..._yet_. Let's change that!
+Git confirms that it's aware of the file `README.md`, but it's not "tracking"
+it. Git's not doing anything with the file and the file is not doing anything
+with Git..._yet_. Let's change that!
 
-> **IMPORTANT**: Whenever we want to check the status of our Git repository — which we do
-> often — type `git status`.
+> **IMPORTANT**: Whenever we want to check the status of our Git repository —
+> which we do often — type `git status`.
 
 ## Keep Track of File Changes with `git add`
 
-Currently, the file in our repository is not being tracked by Git. We
-have to tell Git about all the files we want it to keep track of and consider as
-part of our project. We can do this by _adding_ the files to our `git` repository
-with `git add <filename or path>`. To add our new `README.md` to the repository
-and check the status, we type:
+Currently, the file in our repository is not being tracked by Git. We have to
+tell Git about all the files we want it to keep track of and consider as part of
+our project. We can do this by _adding_ the files to our `git` repository with
+`git add <filename or path>`. To add our new `README.md` to the repository and
+check the status, we type:
 
 ```sh
-my-git-project $ git add README.md
-my-git-project $ git status
+$ git add README.md
+$ git status
 On branch master
 
 No commits yet
@@ -161,13 +161,17 @@ our repository by making _commits_.
 Remember: `git add` got our changes to the repository ready in the previous
 step. Those changes are the ones that will be "captured" in the commit.
 
-To make our first commit, type: `git commit -m "Initial commit"`.
+To make our first commit, type:
+
+```sh
+$ git commit -m "Initial commit"
+```
 
 This tells `git` that our commit message, represented by the `-m` flag, is
 `"Initial commit"`.
 
 ```sh
-my-git-project $ git commit -m "Initial commit"
+$ git commit -m "Initial commit"
 [main (root-commit) e55477d] Initial commit
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 README.md
@@ -184,7 +188,7 @@ Now, if we type `git status`, we'll see that it is at a "clean state", and there
 is nothing to commit and no new changes.
 
 ```sh
-my-git-project $ git status
+$ git status
 On branch master
 nothing to commit, working directory clean
 ```
@@ -193,7 +197,7 @@ If we make another change, for example, to README.md, we can add another commit
 with this new set of changes with
 
 ```sh
-git commit -am "Updates README.md"
+$ git commit -am "Updates README.md"
 ```
 
 The `-a` flag refers to adding 'all changes' on all tracked files and `-m`
@@ -201,13 +205,13 @@ specifies a commit message of `"Updates README.md"`. To review some of your Unix
 CLI skills, this could also be written as:
 
 ```sh
-git commit -a -m "Updates README.md"
+$ git commit -a -m "Updates README.md"
 ```
 
 The commit would look like:
 
 ```sh
-my-git-project $ git commit -am "Updates README.md"
+$ git commit -am "Updates README.md"
 [main (root-commit) e55477d] Updates README.md
  1 file changed, 4 insertions(+), 0 deletions(2)
 ```
