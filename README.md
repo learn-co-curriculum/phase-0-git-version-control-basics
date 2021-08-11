@@ -24,8 +24,6 @@ us all the Git superpowers.
 To get started, we'll create a new directory. In your terminal, type the
 following:
 
-[help]: https://help.learn.co/en/articles/1862105-ide-in-browser-sandbox
-
 > **REMEMBER**: Don't type the `$`. That's the universal symbol for a command
 > prompt. It's how technical documentation says "Here's a thing for the shell to
 > process."
