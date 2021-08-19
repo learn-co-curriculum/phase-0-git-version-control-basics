@@ -198,9 +198,12 @@ with this new set of changes with
 $ git commit -am "Updates README.md"
 ```
 
-The `-a` flag refers to adding 'all changes' on all tracked files and `-m`
-specifies a commit message of `"Updates README.md"`. To review some of your Unix
-CLI skills, this could also be written as:
+The use of the `-am` flag here is a shortcut that combines the steps of adding
+changed files and committing them. The `-a` flag tells git to add 'all changes',
+i.e., all files that have been changed since the last commit. The `-m` flag,
+like before, tells git that we want to specify a commit message, in this case,
+`"Updates README.md"`. To review some of your Unix CLI skills, this could also
+be written as:
 
 ```sh
 $ git commit -a -m "Updates README.md"
