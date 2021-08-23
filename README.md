@@ -28,13 +28,13 @@ following:
 > prompt. It's how technical documentation says "Here's a thing for the shell to
 > process."
 
-```sh
+```console
 $ mkdir my-git-project
 ```
 
 This command creates new a directory. Then:
 
-```sh
+```console
 $ cd my-git-project
 ```
 
@@ -44,7 +44,7 @@ Now that we're in the directory where we want Git to watch for changes (adding,
 removing, and editing files), let's set up this directory by _initializing_ it.
 In the terminal type `git init`. It should look like this:
 
-```sh
+```console
 $ git init
 Initialized empty Git repository in /Users/avi/my-git-project/.git/
 ```
@@ -65,13 +65,13 @@ _within_ the directory you want `git` to track.
 Now that we have Git watching this directory, let's see what it can tell us about the
 directory. The command we use for this is `git status`.
 
-```sh
+```console
 $ git status
 ```
 
 Since we have not added any files yet, we'll see:
 
-```txt
+```console
 On branch main
 
 No commits yet
@@ -92,7 +92,7 @@ typing `touch README.md` from within the `my-git-project` directory. We won't
 see any output after `touch`, but we will see a new file has been created if we
 type `ls` (which gives a list of all the files in the directory).
 
-```sh
+```console
 $ touch README.md
 $ ls
 README.md
@@ -102,7 +102,7 @@ With at least one new project file we can enable Git to start tracking changes.
 Type `git status`. Git will show us what our current repository looks like and
 what changes it sees.
 
-```sh
+```console
 $ git status
 On branch master
 
@@ -131,7 +131,7 @@ our project. We can do this by _adding_ the files to our `git` repository with
 `git add <filename or path>`. To add our new `README.md` to the repository and
 check the status, we type:
 
-```sh
+```console
 $ git add README.md
 $ git status
 On branch master
@@ -161,14 +161,14 @@ step. Those changes are the ones that will be "captured" in the commit.
 
 To make our first commit, type:
 
-```sh
+```console
 $ git commit -m "Initial commit"
 ```
 
 This tells `git` that our commit message, represented by the `-m` flag, is
 `"Initial commit"`.
 
-```sh
+```console
 $ git commit -m "Initial commit"
 [main (root-commit) e55477d] Initial commit
  1 file changed, 0 insertions(+), 0 deletions(-)
@@ -185,7 +185,7 @@ The `commit` command committed 1 file.
 Now, if we type `git status`, we'll see that it is at a "clean state", and there
 is nothing to commit and no new changes.
 
-```sh
+```console
 $ git status
 On branch master
 nothing to commit, working directory clean
@@ -194,7 +194,7 @@ nothing to commit, working directory clean
 If we make another change, for example, to README.md, we can add another commit
 with this new set of changes with
 
-```sh
+```console
 $ git commit -am "Updates README.md"
 ```
 
@@ -205,13 +205,13 @@ like before, tells git that we want to specify a commit message, in this case,
 `"Updates README.md"`. To review some of your Unix CLI skills, this could also
 be written as:
 
-```sh
+```console
 $ git commit -a -m "Updates README.md"
 ```
 
 The commit would look like:
 
-```sh
+```console
 $ git commit -am "Updates README.md"
 [main (root-commit) e55477d] Updates README.md
  1 file changed, 4 insertions(+), 0 deletions(2)
