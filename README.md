@@ -188,7 +188,7 @@ is nothing to commit and no new changes.
 ```console
 $ git status
 On branch master
-nothing to commit, working directory clean
+nothing to commit, working tree clean
 ```
 
 If we make another change, for example, to README.md, we can add another commit
