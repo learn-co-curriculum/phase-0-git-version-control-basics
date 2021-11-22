@@ -104,7 +104,7 @@ what changes it sees.
 
 ```console
 $ git status
-On branch master
+On branch main
 
 No commits yet
 
@@ -134,7 +134,7 @@ check the status, we type:
 ```console
 $ git add README.md
 $ git status
-On branch master
+On branch main
 
 No commits yet
 
@@ -178,7 +178,8 @@ $ git commit -m "Initial commit"
 We can see that Git has created a new version of our repo, represented by the
 _SHA_ `e55477d`. SHAs are the identification system that `git` uses to keep
 track of versions; they're long complex numbers and letters that are unlikely to
-be duplicated.
+be duplicated. If you're following along, the SHA you'll see in your terminal
+will be different.
 
 The `commit` command committed 1 file.
 
@@ -187,12 +188,12 @@ is nothing to commit and no new changes.
 
 ```console
 $ git status
-On branch master
+On branch main
 nothing to commit, working tree clean
 ```
 
-If we make another change, for example, to README.md, we can add another commit
-with this new set of changes with
+If we were to make another change, for example, to README.md, we could then add
+another commit with this new set of changes with
 
 ```console
 $ git commit -am "Updates README.md"
