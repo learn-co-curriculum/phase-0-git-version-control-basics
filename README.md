@@ -62,8 +62,8 @@ _within_ the directory you want `git` to track.
 
 ## Check the Status of a Repository with `git status`
 
-Now that we have Git watching this directory, let's see what it can tell us about the
-directory. The command we use for this is `git status`.
+Now that we have Git watching this directory, let's see what it can tell us
+about the directory. The command we use for this is `git status`.
 
 ```console
 $ git status
