@@ -30,10 +30,6 @@ track our files in, we need to _initialize_ the directory as a Git repository.
 To get started, we'll create a new directory. In your terminal, type the
 following:
 
-> **REMEMBER**: Don't type the `$`. That's the universal symbol for a command
-> prompt. It's how technical documentation says "Here's a thing for the shell to
-> process."
-
 ```console
 $ mkdir my-git-project
 ```
@@ -210,7 +206,7 @@ set of changes with the following:
 
 ```console
 $ git add README.md
-$ git commit -m "Updates README.md"
+$ git commit -m "Update README.md"
 ```
 
 There are also a couple of shortcuts we can use:
@@ -226,25 +222,25 @@ Or we can combine the two steps of adding and committing our file into a single
 command:
 
 ```console
-$ git commit -am "Updates README.md"
+$ git commit -am "Update README.md"
 ```
 
 Here we're combining the `a` and `m` flags. As with the `add .` shortcut, the
 `a` flag tells git to add 'all changes', i.e., all files that have been changed
 since the last commit. The `-m` flag, like before, tells git that we want to
-specify a commit message, in this case, `"Updates README.md"`. This command
+specify a commit message, in this case, `"Update README.md"`. This command
 could also be written as:
 
 ```console
-$ git commit -a -m "Updates README.md"
+$ git commit -a -m "Update README.md"
 ```
 
 Remember, we haven't actually made any changes to `README.md` so there's nothing
 to add or commit. However, if we had, the commit would look something like this:
 
 ```console
-$ git commit -am "Updates README.md"
-[main (root-commit) e55477d] Updates README.md
+$ git commit -am "Update README.md"
+[main (root-commit) e55477d] Update README.md
  1 file changed, 4 insertions(+), 0 deletions(2)
 ```
 
