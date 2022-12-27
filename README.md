@@ -244,6 +244,11 @@ $ git commit -am "Update README.md"
  1 file changed, 4 insertions(+), 0 deletions(2)
 ```
 
+**Note**: the `-am` flag will work for adding and committing changes to files
+that are **already being tracked**, but if you create a new file as part of any
+lesson, you'll need to use `git add` to track that file before you can commit
+it.
+
 Good work! Commits are amazingly powerful in Git. They are the heart of many of
 Git's advanced features. Understanding the basic workflow of Git initialization
 and setup is the foundation for success.
