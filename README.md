@@ -57,9 +57,9 @@ Initialized empty Git repository in /Users/avi/my-git-project/.git/
 The message above lets us know that our new directory is now being tracked by
 Git. It also shows that a new subfolder `.git` has been created. This hidden
 directory is where Git keeps important stuff, like the commit history. Don't go
-in there and start randomly deleting things! That said, if ever you do `git
-init` in the wrong directory, you can `rm -rf .git` to delete the `.git` folder
-and all its contents and return the directory to a plain-old, unprotected
+in there and start randomly deleting things! That said, if ever you do
+`git init` in the wrong directory, you can `rm -rf .git` to delete the `.git`
+folder and all its contents and return the directory to a plain-old, unprotected
 directory.
 
 Be careful about making a containing directory, like our home directory or our
@@ -228,8 +228,8 @@ $ git commit -am "Update README.md"
 Here we're combining the `a` and `m` flags. As with the `add .` shortcut, the
 `a` flag tells git to add 'all changes', i.e., all files that have been changed
 since the last commit. The `-m` flag, like before, tells git that we want to
-specify a commit message, in this case, `"Update README.md"`. This command
-could also be written as:
+specify a commit message, in this case, `"Update README.md"`. This command could
+also be written as:
 
 ```console
 $ git commit -a -m "Update README.md"
@@ -260,9 +260,10 @@ Specifically, we learned how to:
 
 - make a new Git repository out of a directory using `git init`
 - check the status of our repo using `git status`
-- track files that have been changed using the `git add <filename or path>` command
-- save (commit) the changes with an explanatory message using `git commit -m "A
-  message"`
+- track files that have been changed using the `git add <filename or path>`
+  command
+- save (commit) the changes with an explanatory message using
+  `git commit -m "A message"`
 
 So far, however, we've only been using Git with our local repo. In the next two
 lessons, we'll learn how we can use Git in combination with GitHub to _share_
@@ -270,4 +271,4 @@ code with other developers.
 
 ## Resources
 
-- [Git Basics at git-scm.com](https://git-scm.com/book/en/v1/Git-Basics)
+- [Git Basics at git-scm.com](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
